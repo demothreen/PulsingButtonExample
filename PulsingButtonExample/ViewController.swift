@@ -71,12 +71,7 @@ class ViewController: UIViewController {
 
   private func setView() {
     view.addSubview(centerBtn)
-    NSLayoutConstraint.activate([
-      centerBtn.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 1/3),
-      centerBtn.heightAnchor.constraint(equalTo: centerBtn.widthAnchor),
-      centerBtn.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-      centerBtn.centerYAnchor.constraint(equalTo: view.centerYAnchor)
-    ])
+    centerBtn.frame = CGRect(x: view.frame.width/3, y: view.frame.height/3, width: view.frame.width/3, height: view.frame.width/3)
     centerBtn.layer.cornerRadius = view.frame.width/6
     createPulse()
   }
