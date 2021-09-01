@@ -13,6 +13,7 @@
 		4A2D106B26DC1C4C00449191 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A2D106926DC1C4C00449191 /* Main.storyboard */; };
 		4A2D106D26DC1C5200449191 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A2D106C26DC1C5200449191 /* Assets.xcassets */; };
 		4A2D107026DC1C5200449191 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A2D106E26DC1C5200449191 /* LaunchScreen.storyboard */; };
+		4A3C1DEC26E00FF00012E074 /* PulsingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3C1DEB26E00FF00012E074 /* PulsingButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		4A2D106C26DC1C5200449191 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A2D106F26DC1C5200449191 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A2D107126DC1C5200449191 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A3C1DEB26E00FF00012E074 /* PulsingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsingButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				4A2D106C26DC1C5200449191 /* Assets.xcassets */,
 				4A2D106E26DC1C5200449191 /* LaunchScreen.storyboard */,
 				4A2D107126DC1C5200449191 /* Info.plist */,
+				4A3C1DEB26E00FF00012E074 /* PulsingButton.swift */,
 			);
 			path = PulsingButtonExample;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A3C1DEC26E00FF00012E074 /* PulsingButton.swift in Sources */,
 				4A2D106826DC1C4C00449191 /* ViewController.swift in Sources */,
 				4A2D106426DC1C4C00449191 /* AppDelegate.swift in Sources */,
 				4A2D106626DC1C4C00449191 /* SceneDelegate.swift in Sources */,
