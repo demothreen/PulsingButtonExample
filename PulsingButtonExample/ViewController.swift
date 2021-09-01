@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     btn.titleLabel?.numberOfLines = 2
     btn.titleLabel?.textColor = .white
     btn.titleLabel?.textAlignment = .center
+    btn.titleLabel?.layer.zPosition = 1
     btn.translatesAutoresizingMaskIntoConstraints = false
     return btn
   }()
@@ -32,11 +33,9 @@ class ViewController: UIViewController {
       let pulseLayer = CAShapeLayer()
       pulseLayer.path = circularPath.cgPath
       pulseLayer.lineWidth = 2.0
-      pulseLayer.anchorPoint = CGPoint(x: 50, y: 50)
       pulseLayer.fillColor = UIColor.red.withAlphaComponent(0.3).cgColor
       pulseLayer.lineCap = CAShapeLayerLineCap.round
       pulseLayer.position = CGPoint(x: centerBtn.layer.bounds.midX, y: centerBtn.layer.bounds.midY)
-      centerBtn.layer.addSublayer(pulseLayer)
       pulseLayers.append(pulseLayer)
     }
     DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
@@ -67,6 +66,7 @@ class ViewController: UIViewController {
     opacityAnimation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
     opacityAnimation.repeatCount = .greatestFiniteMagnitude
     pulseLayers[index].add(opacityAnimation, forKey: "opacity")
+    centerBtn.layer.addSublayer(pulseLayers[index])
   }
 
   private func setView() {
